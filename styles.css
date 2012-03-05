@@ -1,7 +1,62 @@
+/**
+*	Clearfix hack
+*/
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+/**
+*	Main Style
+*/
+
 body {
 	background-color: #E5E5E5;
-	background-image: url('images/background.png');
+	background-image: url('images/rough_diagonal.png');
 	background-repeat: repeat-all;
+}
+
+h2, h3{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+h2{
+	border-bottom: 3px solid #333;
+	font-size: 40px;
+}
+
+h3{
+	font-size: 30px;
+}
+
+p{
+	font-family: 'Helvetica Neue', helvetica, sans-serif;
+	font-weight: 300;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	border-bottom: 1px dotted #333;
 }
 
 #container{
