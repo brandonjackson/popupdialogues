@@ -6,7 +6,13 @@ Pop-Up Dialogues is a set of six simple and customizable tools for urban interve
 About The Project
 -----------------
 
-The project was initiallly conceived at the GOOD Design Hackathon (organized by GOOD magazine) in March 2012. The team consisted of Adrian del Balso, Brandon Jackson, Pratima Mani, Brielle Maxwell and Taylor Zanke.
+The project was initiallly conceived at the GOOD Design Hackathon (organized by GOOD magazine) in March 2012. The team consisted of:
+
+- Adrian del Balso
+- Brandon Jackson
+- Pratima Mani
+- Brielle Maxwell
+- Taylor Zanke
 
 License
 -------
@@ -21,6 +27,6 @@ You are free:
 
 Under the following conditions:
 
-Attribution — You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work).
+- Attribution — You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work).
 
-Share Alike — If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one.
+- Share Alike — If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one.
