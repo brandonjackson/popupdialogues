@@ -55,6 +55,9 @@ p{
 
 a{
 	text-decoration: none;
+}
+
+p a{
 	color: black;
 	border-bottom: 1px dotted #333;
 }
@@ -244,5 +247,6 @@ div#choices.list #item:hover .links a:hover{
 
 #footer #license a{
 	text-decoration: none;
+	border-bottom: none;
 	color: #000;
 }
