@@ -31,6 +31,8 @@ body {
 	background-color: #E5E5E5;
 	background-image: url('images/rough_diagonal.png');
 	background-repeat: repeat-all;
+	margin: 0;
+	padding: 0;
 }
 
 h2, h3{
@@ -62,69 +64,89 @@ p a{
 	border-bottom: 1px dotted #333;
 }
 
-#container{
-	width: 600px;
+.container{
+	width: 900px;
 	margin: 0 auto;
 }
 
-div#header #logo {
-	width: 100px;
-	height: 100px;
-	margin: 40px auto 20px;
-	position: relative;
-}
-div#header #logo img{
-	height: 100px;
-	width: 100px;
-}
-
-div#howTo {
-	height: 120px;
-	width: 310px;
-	margin: 0 auto;
+#header{
+	background-image: url('images/header_background.png');
+	background-repeat: repeat-x;
 	display: block;
+	height: 71px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
 }
 
-div#howToText {
-	height: 120px;
-	width: 300px;
-	margin: 0 auto;
-	display: block;
-	text-align: center;
-	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-size: 25px;
-}
-
-div#howToText span {
-	width: 100px;
-	margin: 5px auto;
+#header img#logo {
+	width: 50px;
+	height: 50px;
+	margin: 7px 30px 7px 0;
 	float: left;
 }
 
-
-
-#header h1 {
-	margin: 0px auto;
-	padding: 20px;
-	font-size: 50px;
-	text-align: center;
-	width: 300px;
+#header h1{
+	color: white;
+	float: left;
+	margin: 8px 0 0;
+	font-size: 40px;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	text-transform: uppercase;
 	font-weight: 300;
-	text-shadow: -1px -1px #eee;
+	text-shadow: -1px -1px #333;
 }
 
-div#topText {
-	margin: 20px;
-	padding: 30px;
+#intro{
+	background-image: url('images/speech_bubble.png');
+	height: 155px;
+	width: 840px;
+	display: block;
+	padding: 0;
+	margin: 40px 0;
+	padding:20px 30px;
+}
+
+#intro span#big{
+	display: block;
+	font-size: 43px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: 500;
+	margin-bottom: 7px;
+}
+
+#intro span#small{
+	display: block;
 	font-family: 'Helvetica Neue', helvetica, sans-serif;
 	font-weight: 300;
-	font-size: 20px;
-	text-align: center;
-	border-bottom: 5px solid #333;
-	text-align: justify;
+	font-size: 24px;
 	line-height: 1.3em;
+	color: #555;
+}
+
+
+div#howTo {
+	margin: 20px 0 60px 0;
+}
+
+div#howTo .step{
+	width: 300px;
+	float: left;
+}
+div#howTo .step img{
+	float: left;
+	width: 75px;
+}
+div#howTo .step h4, div#howTo .step p{
+	width: 190px;
+	margin: 0 20px 10px 0;
+	float: right;
+}
+div#howTo .step h4{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: 500;
 }
 
 #choices {
@@ -171,28 +193,41 @@ div#choices.grid #item a {
 div#choices.grid #item p, div#choices.grid #item .links{
 	display: none;
 }
+div#choices.list{
+	margin-left: -20px;
+	width: 940px;
+}
+
 div#choices.list #item{
-	clear: both;
-	margin: 5px 0 0;
 	height: 230px;
 	padding: 20px;
 	border-radius: 5px;
+	width: 420px;
+	float: left;
 }
 div#choices.list #item:hover{
 	cursor: pointer;
 	background-image: url('images/transparent-3.png');
 }
+div#choices.list #item.left{
+	margin-left: 0px;
+}
+
+div#choices.list #item.right{
+	margin-left: 10px;
+}
+
 div#choices.list #item img{
 	background-color: #FFF;
-	width: 160px;
-	padding: 40px;
+	width: 135px;
+	padding: 30px;
 	border-radius: 5px;
 	float: left;
 	border: 1px solid #ccc;
 }
 
 div#choices.list #item a, div#choices.list #item p, div#choices.list #item .links{
-	width: 300px;
+	width: 200px;
 	float: right;
 }
 
@@ -216,8 +251,8 @@ div#choices.list #item .links a{
 	display: block;
 	float: left;
 	padding: 5px;
-	width: 60px;
-	margin-right: 10px;
+	width:45px;
+	margin-right: 5px;
 	text-align: center;
 	border-radius: 5px;
 	border: 1px solid #DDD;
@@ -231,6 +266,29 @@ div#choices.list #item:hover .links a:hover{
 	border: 1px solid #AAA;
 }
 
+#advice .topic{
+	margin-bottom: 40px;
+}
+
+#advice h3{
+	float: left;
+	clear: both;
+	width: 225px;
+	margin: 0;
+}
+#advice .answer{
+	float: right;
+	width: 675px;
+}
+
+#advice .answer p{
+	margin: 0 0 8px;
+}
+
+/**
+*	Footer
+*/
+
 #footer{
 	margin: 40px 0;
 	padding: 40px 0 0;
@@ -239,7 +297,7 @@ div#choices.list #item:hover .links a:hover{
 
 #footer #license {
 	float: right;
-	width: 450px;
+	width: 675px;
 	margin: 0;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	color: #555;

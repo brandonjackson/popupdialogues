@@ -1,140 +1,163 @@
 <html>
-	<head>
-		<title>Pop-Up Dialogues</title>
-		<link href="styles.css" rel="stylesheet" type="text/css">
-		<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,700' rel='stylesheet' type='text/css'>
-	</head>
-	<body>
-		<div id="container">
-		<div id="header">
-			<div id="logo">
-				<img src="images/logo.png" alt="Pop-Up Dialogues" />
-			</div>
-			<h1>
-			Pop-Up Dialogues
-			</h1>
-		</div>
+<head>
+	<title>Pop-Up Dialogues</title>
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div id="header">
+	<div class="container">
+		<img id="logo" src="images/logo.png" alt="Pop-Up Dialogues" />
+		<h1>Pop-Up Dialogues</h1>
+	</div>
+</div>
 		
-		<div id="howTo">
-			
-			<img src="images/print.png" alt="print image" width="100" height=""/>
-			<img src="images/place.png" alt="print image" width="100" height="" />
-			<img src="images/talk.png" alt="print image"  width="100" height=""/>
-			
-			<div id="howToText">
-				<span>PRINT</span>
-				<span>PLACE </span>
-				<span>TALK</span>
-			</div>
+<div class="container">
 	
+	<!-- Introduction / Speech Bubble -->
+	<div id="intro">
+		<span id="big">Start conversations in public spaces.</span>
+		<span id="small">Pop-Up Dialogues is a free toolkit of printable, customizable posters designed to get neighbors talking. Print one out and put it up.</span>
+	</div>
+	
+	<!-- How-To Section -->
+	<div id="howTo" class="clearfix">
+		<div class="step clearfix">
+			<img src="images/print.png" alt="print image" />
+			<h4>Print</h4>
+			<p>Print out a pop-up. The pop-ups are available in a variety of sizes and file formats.</p>
 		</div>
 		
-		<div id="topText">
-				Pop-Up Dialogues is a set of six simple and customizable tools for urban intervention. Print one out and put it up. Start conversations in public spaces. 
+		<div class="step clearfix">
+			<img src="images/place.png" alt="print image" />
+			<h4>Place</h4>
+			<p>Place your pop-up in a public space like on a bulletin board, abandoned building or wall.</p>
 		</div>
-		
-		<h2 style="display: none;">The Pop-Ups</h2>
-		<div id="choices" class="list">
-			<div id="item" class='left'>
-				<img src="images/venn_diagram.png" alt="Venn Diagram"/>
-				<a href="#">The Venn Diagram</a>
-				<p>Yes? No? Maybe? Take a quick poll using the venn diagram poster.</p>
-				<div class="links">
-					<a href="interventions/venn_diagram.pdf">PDF</a>
-					<a href="interventions/venn_diagram.png">PNG</a>
-					<a href="interventions/venn_diagram.ai">AI</a>
-				</div>
-			</div>
-			<div id="item" class='right'>
-				<img src="images/draw_a_cat.png" alt="Draw a ___"/>
-				<a href="#">Collaborative Drawing</a>
-				<p>Inspire strangers to draw collaboratively using this poster.</p>
-				<div class="links">
-					<a href="interventions/draw.pdf">PDF</a>
-					<a href="interventions/draw.png">PNG</a>
-					<a href="interventions/draw.ai">AI</a>
-				</div>
-			</div>
-			<div id="item" class='left'>
-				<img src="images/quadrant.png" alt="Matrix"/>
-				<a href="#">Graph</a>
-				<p>Get citizens to plot their opinions about nuanced, multidimensional questions on the approval matrix.</p>
-				<div class="links">
-					<a href="interventions/graph.pdf">PDF</a>
-					<a href="interventions/graph.png">PNG</a>
-					<a href="interventions/graph.ai">AI</a>
-				</div>
-			</div>
-			<div id="item" class='right'>
-				<img src="images/question_wall.png" alt="Questions Wall"/>
-				<a href="#">Questions Wall</a>
-				<p>Fill in the blank to answer a question. Inspired by Candy Chang in New Orleans.</p>
-				<div class="links">
-					<a href="interventions/question.pdf">PDF</a>
-					<a href="interventions/question.png">PNG</a>
-					<a href="interventions/question.ai">AI</a>
-				</div>
-			</div>
-			<div id="item" class='left'>
-				<img src="images/connect_the_dots.png" alt="Connect the Dots"/>
-				<a href="#">Connect The Dots</a>
-				<p>Tap into the collective subconscious of the population using the connect the dots poster.</p>
-				<div class="links">
-					<a href="interventions/dots.pdf">PDF</a>
-					<a href="interventions/dots.png">PNG</a>
-					<a href="interventions/dots.ai">AI</a>
-				</div>
-			</div>
-			<div id="item" class='right'>
-				<img src="images/vote.png" alt="Voting"/>	
-				<a href="#">Voting</a>
-				<p>The voting poster is the perfect way to get opinions about black and white, yes or no questions.</p>
-				<div class="links">
-					<a href="interventions/voting.pdf">PDF</a>
-					<a href="interventions/voting.png">PNG</a>
-					<a href="interventions/voting.ai">AI</a>
-				</div>
-			</div>
-		</div>
-		
-		<div id="advice">
-		
-			<h2>Advice</h2>
 			
+		<div class="step clearfix">
+			<img src="images/talk.png" alt="print image" />
+			<h4>Talk</h4>
+			<p>Watch as fellow citizens start conversations and share their opinions. Feel satisfied. Repeat.</p>
+		</div>
+		
+	</div>
+	
+	<h2>The Pop-Ups</h2>
+	<div id="choices" class="list clearfix">
+		<div id="item" class='left'>
+			<img src="images/venn_diagram.png" alt="Venn Diagram"/>
+			<a href="#">The Venn Diagram</a>
+			<p>Yes? No? Maybe? Take a quick poll using the venn diagram poster.</p>
+			<div class="links">
+				<a href="interventions/venn_diagram.pdf">PDF</a>
+				<a href="interventions/venn_diagram.png">PNG</a>
+				<a href="interventions/venn_diagram.ai">AI</a>
+			</div>
+		</div>
+		<div id="item" class='right'>
+			<img src="images/draw_a_cat.png" alt="Draw a ___"/>
+			<a href="#">Collaborative Drawing</a>
+			<p>Inspire strangers to draw collaboratively using this poster.</p>
+			<div class="links">
+				<a href="interventions/draw.pdf">PDF</a>
+				<a href="interventions/draw.png">PNG</a>
+				<a href="interventions/draw.ai">AI</a>
+			</div>
+		</div>
+		<div id="item" class='left'>
+			<img src="images/quadrant.png" alt="Matrix"/>
+			<a href="#">Graph</a>
+			<p>Get citizens to plot their opinions about nuanced, multidimensional questions on the approval matrix.</p>
+			<div class="links">
+				<a href="interventions/graph.pdf">PDF</a>
+				<a href="interventions/graph.png">PNG</a>
+				<a href="interventions/graph.ai">AI</a>
+			</div>
+		</div>
+		<div id="item" class='right'>
+			<img src="images/question_wall.png" alt="Questions Wall"/>
+			<a href="#">Questions Wall</a>
+			<p>Fill in the blank to answer a question. Inspired by Candy Chang in New Orleans.</p>
+			<div class="links">
+				<a href="interventions/question.pdf">PDF</a>
+				<a href="interventions/question.png">PNG</a>
+				<a href="interventions/question.ai">AI</a>
+			</div>
+		</div>
+		<div id="item" class='left'>
+			<img src="images/connect_the_dots.png" alt="Connect the Dots"/>
+			<a href="#">Connect The Dots</a>
+			<p>Tap into the collective subconscious of the population using the connect the dots poster.</p>
+			<div class="links">
+				<a href="interventions/dots.pdf">PDF</a>
+				<a href="interventions/dots.png">PNG</a>
+				<a href="interventions/dots.ai">AI</a>
+			</div>
+		</div>
+		<div id="item" class='right'>
+			<img src="images/vote.png" alt="Voting"/>	
+			<a href="#">Voting</a>
+			<p>The voting poster is the perfect way to get opinions about black and white, yes or no questions.</p>
+			<div class="links">
+				<a href="interventions/voting.pdf">PDF</a>
+				<a href="interventions/voting.png">PNG</a>
+				<a href="interventions/voting.ai">AI</a>
+			</div>
+		</div>
+	</div>
+	
+	<div id="advice">
+	
+		<h2>Advice</h2>
+		
+		<div class="topic clearfix">
 			<h3>Site Selection</h3>
-			<p>Picking a place to hang your pop-up is one of the trickiest parts of staging an urban intervention. Common locations include public bulletin boards, on the walls of abandoned buildings, and on subway platforms. Here are some factors to consider:</p>
-			<p><em>The Law</em>. Make sure you are familiar with the laws in your area regarding posters. It is often illegal to hang them without the permission of the property owners.</p>
-			<p><em>Traffic</em>. Pop-ups in highly-trafficked areas will probably be more visible. However, it's also possible that citizens will be surprised to see installations in neglected areas and be more likely to engage.</p>
-			
-			<h3>Questions</h3>
-			<p>Pop-Up Dialogues are designed to facilitate conversations, but ultimately it is up to you to decide what question to ask. The question depends on the kind of dialogue you want to inspire. Questions can get the pulse of the community on practical issues such as "Does this park need more trees?" Other pop-ups can be used to inspire conversations about the hopes and dreams of the community, such as this questions posed by artist <a href="http://candychang.com/">Candy Chang</a>: "Before I Die I Want To ______________".</p>
-			
-			<h3>Resources</h3>
-			<p>Entrepreneurial citizens around the world are trying to improve the quality of public space through design and conversation. For those interested in getting connected with others involved in these projects, check out the work of <a href="http://candychang.com/">Candy Chang</a> and her New Orleans-based design studio, <a href="http://civiccenter.cc/">Civic Center.</a> The non-profit organization <a href="http://www.pps.org/">Projects for Public Spaces</a> has an excellent website filled with informative articles about things such as <a href="http://www.pps.org/articles/what_is_placemaking/">placemaking</a> and <a href="http://www.pps.org/articles/11steps/">community spaces</a> <a href="http://good.is">GOOD</a> and <a href="http://americancity.org/">Next American City</a> magazines are also very informative.</p>
+			<div class="answer">
+				<p>Picking a place to hang your pop-up is one of the trickiest parts of staging an urban intervention. Common locations include public bulletin boards, on the walls of abandoned buildings, and on subway platforms. Here are some factors to consider:</p>
+				<p><em>The Law</em>. Make sure you are familiar with the laws in your area regarding posters. It is often illegal to hang them without the permission of the property owners.</p>
+				<p><em>Traffic</em>. Pop-ups in highly-trafficked areas will probably be more visible. However, it's also possible that citizens will be surprised to see installations in neglected areas and be more likely to engage.</p>
+			</div>
 		</div>
 		
-		<div id="footer">
-			<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
-				<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" />
-			</a>
-			<p id="license">
-			Pop-Up Dialogues was started by at the <a href="http://good.parsons.edu">GOOD Design Hackathon</a> in March 2012 by Adrian del Bolso, <a href="http://www.brandonjacksondesign.com">Brandon Jackson</a>, Pratima Mani, Brielle Maxwell & Taylor Zanke.<br />
-				This <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/StillImage" rel="dct:type">work</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
-			</p>
+		<div class="topic clearfix">
+			<h3>Questions</h3>
+			<div class="answer">
+				<p>Pop-Up Dialogues are designed to facilitate conversations, but ultimately it is up to you to decide what question to ask. The question depends on the kind of dialogue you want to inspire. Questions can get the pulse of the community on practical issues such as "Does this park need more trees?" Other pop-ups can be used to inspire conversations about the hopes and dreams of the community, such as this questions posed by artist <a href="http://candychang.com/">Candy Chang</a>: "Before I Die I Want To ______________".</p>
+			</div>
 		</div>
-		</div><!--close container div-->
-	<script type="text/javascript">
+		
+		<div class="topic clearfix">
+			<h3>Resources</h3>
+			<div class="answer">
+				<p>Entrepreneurial citizens around the world are trying to improve the quality of public space through design and conversation. For those interested in getting connected with others involved in these projects, check out the work of <a href="http://candychang.com/">Candy Chang</a> and her New Orleans-based design studio, <a href="http://civiccenter.cc/">Civic Center.</a> The non-profit organization <a href="http://www.pps.org/">Projects for Public Spaces</a> has an excellent website filled with informative articles about things such as <a href="http://www.pps.org/articles/what_is_placemaking/">placemaking</a> and <a href="http://www.pps.org/articles/11steps/">community spaces</a> <a href="http://good.is">GOOD</a> and <a href="http://americancity.org/">Next American City</a> magazines are also very informative.</p>
+			</div>
+		</div>
+	</div>
 	
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-1627868-35']);
-	  _gaq.push(['_trackPageview']);
-	
-	  (function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-	
-	</script>
-	</body>
+	<div id="footer">
+		<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+			<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" />
+		</a>
+		<p id="license">
+		Pop-Up Dialogues was started by at the <a href="http://good.parsons.edu">GOOD Design Hackathon</a> in March 2012 by Adrian del Bolso, <a href="http://www.brandonjacksondesign.com">Brandon Jackson</a>, Pratima Mani, Brielle Maxwell & Taylor Zanke.<br />
+			This <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/StillImage" rel="dct:type">work</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+		</p>
+	</div>
+</div><!--close container div-->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1627868-35']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
 </html>
