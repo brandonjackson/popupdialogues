@@ -1,0 +1,193 @@
+body {
+	/*background: #fafafa;*/
+	background-image: url('images/background.png');
+	background-repeat: repeat-all;
+}
+
+#container{
+	width: 600px;
+	margin: 0 auto;
+}
+
+div#header #logo {
+	width: 100px;
+	height: 100px;
+	margin: 40px auto 20px;
+	position: relative;
+}
+div#header #logo img{
+	height: 100px;
+	width: 100px;
+}
+
+div#howTo {
+	height: 120px;
+	width: 310px;
+	margin: 0 auto;
+	display: block;
+}
+
+div#howToText {
+	height: 120px;
+	width: 300px;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 25px;
+}
+
+div#howToText span {
+	width: 100px;
+	margin: 5px auto;
+	float: left;
+}
+
+
+
+#header h1 {
+	margin: 0px auto;
+	padding: 20px;
+	font-size: 50px;
+	text-align: center;
+	width: 300px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	text-shadow: -1px -1px #eee;
+}
+
+div#topText {
+	margin: 20px;
+	padding: 30px;
+	font-family: 'Helvetica Neue', helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	text-align: center;
+	border-bottom: 5px solid #333;
+	text-align: justify;
+	line-height: 1.3em;
+}
+
+#choices {
+	margin: 20px auto;
+}
+
+div#choices.grid #item {
+	width: 275px;
+	height: 220px;
+	margin: 20px 0;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	display: block;
+	background: #fbfbfb;
+}
+div#choices.grid #item:hover{
+	background: #fff;
+	cursor: pointer;
+	border: 1px solid #ddd;
+}
+div#choices.grid #item img{
+	width: 180px;
+	margin: 25px 0 0 45px;
+}
+
+div#choices.grid #item.left{
+	float: left;
+}
+div#choices.grid #item.right{
+	float: right;
+}
+
+div#choices.grid #item a {
+	color: orange;
+	text-decoration: none;
+	margin-top: 25px;
+	display: block;
+	text-align: center;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+div#choices.grid #item p, div#choices.grid #item .links{
+	display: none;
+}
+div#choices.list #item{
+	clear: both;
+	margin: 5px 0 0;
+	height: 230px;
+	padding: 20px;
+	border-radius: 5px;
+}
+div#choices.list #item:hover{
+	cursor: pointer;
+	background-image: url('images/transparent-3.png');
+}
+div#choices.list #item img{
+	background-color: #FFF;
+	width: 160px;
+	padding: 40px;
+	border-radius: 5px;
+	float: left;
+	border: 1px solid #ccc;
+}
+
+div#choices.list #item a, div#choices.list #item p, div#choices.list #item .links{
+	width: 300px;
+	float: right;
+}
+
+div#choices.list #item a{
+	text-decoration: none;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 28px;
+	color: #000;
+}
+div#choices.list #item p{
+	color: #333;
+	font-family: 'Helvetica Neue', helvetica, sans-serif;
+	font-weight: 300;
+}
+
+div#choices.list #item .links a{
+	background: #F0F0F0;
+	color: #333;
+	display: block;
+	float: left;
+	padding: 5px;
+	width: 60px;
+	margin-right: 10px;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid #DDD;
+	font-size: 20px;
+}
+div#choices.list #item:hover .links a{
+	border: 1px solid #CCC;
+	background: #FFF;
+}
+div#choices.list #item:hover .links a:hover{
+	border: 1px solid #AAA;
+}
+
+#footer{
+	margin: 40px 0;
+	padding: 40px 0 0;
+	border-top: 3px solid black;
+}
+
+#footer #license {
+	float: right;
+	width: 450px;
+	margin: 0;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: #555;
+}
+
+#footer #license a{
+	text-decoration: none;
+	color: #000;
+}
